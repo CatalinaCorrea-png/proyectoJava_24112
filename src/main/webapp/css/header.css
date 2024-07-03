@@ -1,0 +1,89 @@
+/** HEADER */
+
+.header {
+  background-color: var(--secundario);
+  color: var(--primario);
+  height: 10vh;
+  /* initial */
+  position: sticky;
+  /* fixed va a hacer que la imagen se meta debajo del header */
+  top: 0;
+  z-index: 10;
+
+  .navegacion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 40px;
+    margin-right: 40px;
+    padding: 1.5rem 0;
+
+    .anclalogo {
+      text-decoration: none;
+      color: var(--terciario);
+      font-weight: 700;
+      font-size: 1.7rem;
+      &:hover{
+        /* animation: tilt-n-move-shaking 0.25s infinite; */
+        animation: zoom-in-n-out 1s 4;
+    }
+    }
+
+    .listaNav {
+      list-style: none;
+      display: flex;
+      align-items: center;
+
+      .listaItem {
+        margin-right: 20px;
+
+        .linkNav {
+          color: var(--primario);
+          text-decoration: none;
+          font-weight: 700;
+          font-size: 1.4rem;
+          padding: 0.5rem 1rem;
+
+          transition: transform 0.3s, box-shadow 0.3s, font-size 0.3s, background-image 0.4s;
+
+          &:hover {
+            transform: scale(0.9);
+            font-size: 1.5rem;
+            color: var(--terciario);
+            border-radius: 5px;
+            background-color: rgb(46, 21, 65);
+          }
+        }
+
+        .linkNav.iniciarSesion {
+          background-image: linear-gradient(rgb(114, 81, 139) 50%, rgb(46, 21, 65) 100%);
+          color: var(--terciario);
+          border-radius: 5px;
+
+          &:hover {
+            /*background-image: linear-gradient(rgb(114, 81, 139)5%,rgb(46, 21, 65) 40%,rgb(46, 21, 65) 60%,rgb(114, 81, 139) 100%);*/
+            background-image: linear-gradient(rgb(46, 21, 65) 0%, rgb(114, 81, 139) 50%);
+            /** PARA AGREGARLE ANIMACION */
+          }
+        }
+      }
+    }
+  }
+}
+
+/** ANIMACIONES */
+
+@keyframes tilt-n-move-shaking {
+  0% { transform: translate(0, 0) rotate(0deg); }
+  25% { transform: translate(5px, 5px) rotate(5deg); }
+  50% { transform: translate(0, 0) rotate(0eg); }
+  75% { transform: translate(-5px, 5px) rotate(-5deg); }
+  100% { transform: translate(0, 0) rotate(0deg); }
+}
+
+@keyframes zoom-in-n-out {
+  0% { transform: scale(1, 1) translate(0, 0); }
+  /* 25% { transform: scale(1.5, 1.5) translate(0, 0); } */
+  50% { transform: scale(1.2, 1.2) translate(5px, 0); }
+  100% { transform: scale(1, 1) translate(0, 0); }
+}

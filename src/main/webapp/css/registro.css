@@ -1,0 +1,74 @@
+/** FORMS (REGISTRO E INICIO SESION) */
+
+.form-registro {
+  background: linear-gradient(to right top, #0000008a, #0000008a), url(../img/camara-video-vintage-gafas-3d-entradas-cine.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 92.9vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.form-sesion {
+  background: linear-gradient(to right top, #0000008a, #0000008a), url(../img/gafas-3d-palomitas-maiz-claqueta-sobre-fondo-hormigon.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 92.9vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.tituloRegistrarse {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.form-label {
+  font-size: 1.5rem;
+}
+
+.form-control{
+  width: 60vh;
+  height: 5vh;
+  font-size: 1.2rem;
+}
+
+.form-text{
+  color: aliceblue;
+  font-size: 1.0rem;
+}
+
+.form-date{
+  width: 40vh;
+  height: 5vh;
+}
+
+.sm-form-control{
+  width: 40vh;
+  height: 5vh;
+}
+
+.error input{
+  border: 2px solid #f00;
+}
+.error-text{
+  color: #f00;
+  text-shadow: 1px 1px 3px black;
+  font-weight: 600;
+  font-size: 1.2rem;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.container{
+    width: 70vh;
+}

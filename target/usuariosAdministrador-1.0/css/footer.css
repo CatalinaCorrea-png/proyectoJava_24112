@@ -1,0 +1,39 @@
+/** FOOTER */
+.footer {
+  background-color: rgb(46, 21, 65);
+  color: var(--terciario);
+  height: 15vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  .listaNavs {
+    list-style: none;
+    display: flex;
+    align-items: center;
+  }
+  
+  .listaItems {
+    margin-left: 20px;
+  }
+  
+  .linkNavs {
+    text-decoration: none;
+    color: var(--terciario);
+    font-weight: 700;
+    font-size: 1.2rem;
+    &:hover{
+      /* border-bottom: solid 1px var(--primario); */
+      color: var(--primario);
+    }
+  }
+}
+
+
+.flechaArriba {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  color: white;
+  cursor: pointer;
+}

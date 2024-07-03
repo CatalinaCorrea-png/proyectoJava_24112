@@ -1,0 +1,134 @@
+/** DETALLE PELIS */
+.detalle {
+  padding-top: 20px;
+  background: linear-gradient(to right top, #0000008a, #0000008a), url(../img/aclamada_1.jpg);  
+  background-size: cover;
+  background-position: center;
+  height: 70vh;
+  margin-bottom: 50px;
+}
+.fondoDetalle {
+  width: 75%;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 300px 600px;
+  column-gap: 50px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  animation: mostrar 1.0s both;
+
+  .posterDetalle{
+    width: 300px;
+    border-radius: 10px;
+  }
+  .tituloDetalle {
+    font-weight: bold;
+    font-size: 3rem;
+    margin: 0;
+  }
+  .overviewDetalle {
+    h3 {
+      font-weight: bold;
+      font-size: 2rem;
+    }
+    p {
+      font-size: 1.5rem;
+    }
+  }
+  .datosVarios {
+    margin: 0;
+    display: flex;
+    justify-content: space-evenly;
+    /* column-gap: 40px; */
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding: 0;
+    margin-bottom: 10px;
+    li{
+      padding: 0 10px;
+      background-color: rgba(158, 158, 158, 0.534);
+      border-radius: 10px;
+      list-style: none;
+    }
+  }
+  .datosProduccion {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    h3 {
+      margin: 0;
+      font-weight: bold;
+      }
+    p {
+      font-size: 1.3rem;
+    }
+  }
+
+}
+
+.trailer {
+  width: 75%;
+  margin: 0 auto;
+  padding-top: 150px;
+  padding-bottom: 100px;
+
+  display: grid;
+  grid-template-columns: auto auto;
+  column-gap: 50px;
+  justify-content: space-evenly;
+  hr {
+    width: 75%;
+  }
+  h2 {
+    font-weight: bold;
+  }
+
+  .infoTrailer {
+    .tablaInfo {
+      table {
+        width: 100%;
+        display: table;
+        border-collapse: separate;
+        text-indent: initial;
+        border-spacing: 2px;
+        thead {
+          display: table-header-group;
+          vertical-align: middle;
+          font-size: 1.2rem;
+        }
+        tbody {
+          display: table-row-group;
+          vertical-align: middle;
+          td {
+            font-size: 1.5rem;
+            padding: 10px 0;
+            strong {
+              font-weight: bold;
+            }
+          }
+        }
+      }
+    }
+    .redes {
+      
+      ul {
+        list-style: none;
+        display: flex;
+        column-gap: 20px;
+        justify-content: space-between;
+        li {
+          a {
+            text-decoration: none;
+            color: ghostwhite;
+            font-size: 2.5rem;
+            margin-right: 50px;
+          }
+        }
+      }
+    }
+
+  }
+
+}

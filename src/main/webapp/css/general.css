@@ -1,0 +1,48 @@
+:root {
+  --fondo: rgb(24, 20, 25);
+  --primario: rgb(170, 102, 221);
+  --secundario: rgb(38, 17, 54);
+  --terciario: rgb(197, 172, 216);
+}
+html {
+	scroll-behavior: smooth;
+}
+* {
+  /* box-sizing: border-box; */
+  margin: 0;
+  padding: 0;
+  font-family: 'Alumni Sans Pinstripe', sans-serif;
+}
+
+body {
+  background-color: var(--fondo);
+  color: ghostwhite;
+}
+a {
+  text-decoration: none;
+
+}
+hr {
+  height: 4px;
+  width: initial;
+  /* background-color: var(--primario); */
+  background-color: rgb(76, 48, 99); 
+  margin: 0 200px;
+  border-radius: 10px;
+  border: none;
+}
+
+/** ANIMACIONES */
+
+@keyframes mostrar {
+	from { opacity: 0; }
+	to { opacity: 1; }
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(54, 24, 77);
+  border-radius: 10px;
+}
