@@ -50,7 +50,7 @@
             transform: scale(0.9);
             font-size: 1.5rem;
             color: var(--terciario);
-            border-radius: 5px;
+            border-radius: 20px;
             background-color: rgb(46, 21, 65);
           }
         }
@@ -58,7 +58,7 @@
         .linkNav.iniciarSesion {
           background-image: linear-gradient(rgb(114, 81, 139) 50%, rgb(46, 21, 65) 100%);
           color: var(--terciario);
-          border-radius: 5px;
+          border-radius: 20px;
 
           &:hover {
             /*background-image: linear-gradient(rgb(114, 81, 139)5%,rgb(46, 21, 65) 40%,rgb(46, 21, 65) 60%,rgb(114, 81, 139) 100%);*/

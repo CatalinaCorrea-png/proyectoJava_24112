@@ -41,10 +41,11 @@
 
 .botonRegistrarse {
   background-color: rgb(46, 21, 65);
+  /* background-color: var(--terciario); */
   color: #ffffff;
-  padding: 1rem 2rem;
+  padding: .8rem 2rem;
   border-radius: 5px;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-weight: 700;
   text-decoration: none;
   transition: transform 0.3s, box-shadow 0.3s;
@@ -101,6 +102,25 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.noSeEncontro {
+  width: 500px;
+  font-size: 1.7rem;
+  font-weight: 600;
+  margin: 10px auto;
+  text-align: center;
+  p {
+    font-size: 1.3rem;
+    margin: 0;
+  }
+  a {
+    margin-top: 0;
+    color: var(--primario);
+    font-size: 1.3rem;
+    cursor: pointer;
+    border-bottom: 1px solid var(--primario);
+  }
 }
 
 /** MOVIE CARDS (TENDENCIAS) */
@@ -237,6 +257,31 @@
     }
   }
 }
+
+.botonAntSigContainer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+  column-gap: 20px;
+  
+  .botonAntSig {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.4rem;
+    padding: 0.5rem 1rem;
+    background-image: linear-gradient(rgb(114, 81, 139) 50%, rgb(46, 21, 65) 100%);
+    color: var(--terciario);
+    border-radius: 30px;
+  
+    transition: transform 0.3s;
+    &:hover {
+      transform: scale(.9,.9);
+      background-image: linear-gradient(rgb(46, 21, 65) 0%, rgb(114, 81, 139) 50%);
+      /** PARA AGREGARLE ANIMACION */
+    }
+  }
+}
+
 
 /*--------- ACLAMADAS --------*/
 
