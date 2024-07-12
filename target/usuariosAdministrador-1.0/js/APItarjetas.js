@@ -152,8 +152,7 @@ function dibujarTarjetaBuscada(resultadosPelis) {
 };
 
 function checkPeli(resultado) {
-  // return resultado.title.includes(buscardorPeli.value);
-  return resultado.title.toLowerCase().includes(buscardorPeli.value) || resultado.title.includes(buscardorPeli.value);
+  return resultado.title.toLowerCase().includes(buscardorPeli.value.toLowerCase());
 }
 function cambioValor() {
   buscardorPeli.value = buscardorPeli.value.charAt(0).toUpperCase() + buscardorPeli.value.slice(1)
